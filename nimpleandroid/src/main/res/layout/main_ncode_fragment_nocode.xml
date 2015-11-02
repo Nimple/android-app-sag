@@ -48,28 +48,35 @@
         android:layout_centerHorizontal="true">
 
         <ImageView
-            android:id="@+id/nimple_icon"
+            android:id="@+id/sag_icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/ic_nimple_launcher" />
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/ic_sag_logo" />
 
-        <TextView
-            android:id="@+id/nimple"
+        <ImageView
+            android:id="@+id/poweredBy_icon"
+            android:layout_marginTop="5dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="6dp"
-            android:text="@string/app_name"
-            android:textAppearance="@style/NimpleTextHeading"
-            android:textColor="@color/nimple_color" />
+            android:src="@drawable/ic_powered_by" />
 
-        <TextView
-            android:id="@+id/slogan"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/app_slogan"
-            android:textAppearance="@style/NimpleTextDefault"
-            android:textColor="@color/nimple_color" />
+        <!--<TextView-->
+            <!--android:id="@+id/nimple"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:text="@string/app_name"-->
+            <!--android:textAppearance="@style/NimpleTextHeading"-->
+            <!--android:textColor="@color/nimple_color" />-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/slogan"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/app_slogan"-->
+            <!--android:textAppearance="@style/NimpleTextDefault"-->
+            <!--android:textColor="@color/nimple_color" />-->
     </LinearLayout>
 
     <LinearLayout

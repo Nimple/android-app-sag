@@ -22,7 +22,6 @@ import de.nimple.events.ContactAddedEvent;
 import de.nimple.events.DuplicatedContactEvent;
 import de.nimple.events.NimpleCodeScanFailedEvent;
 import de.nimple.events.NimpleCodeScannedEvent;
-import de.nimple.services.upgrade.ProVersionHelper;
 import de.nimple.ui.main.fragments.ContactListFragment;
 import de.nimple.ui.main.fragments.NimpleCardFragment;
 import de.nimple.ui.main.fragments.NimpleCodeFragment;
@@ -59,8 +58,6 @@ public class MainActivity extends BaseActivity {
 
 		//EventBus.getDefault().register(this);
 		EventBus.getDefault().post(new ApplicationStartedEvent());
-        //FOR DEBUGING
-        ProVersionHelper.getInstance(ctx).setPro(true);
 	}
 
 	@Override

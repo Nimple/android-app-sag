@@ -3,10 +3,12 @@
 
     <PreferenceCategory>
         <Preference
-            android:icon="@drawable/ic_nimple_launcher"
+            android:icon="@drawable/ic_sag"
             android:key="prefs_about_version"
             android:selectable="false"
-            android:title="@string/app_slogan" />
+            android:title="SAG Cards powered by Nimple">
+            <include layout="@layout/about_text"/>
+        </Preference>
         <Preference android:title="@string/about_faq" >
             <intent
                 android:action="android.intent.action.VIEW"

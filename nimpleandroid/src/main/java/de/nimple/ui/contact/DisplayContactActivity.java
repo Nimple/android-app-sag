@@ -37,8 +37,6 @@ import de.nimple.services.contacts.ContactsService;
 import de.nimple.services.export.Export;
 import de.nimple.services.export.IExportExtender;
 import de.nimple.services.nimplecode.VCardHelper;
-import de.nimple.services.upgrade.ProObservable;
-import de.nimple.services.upgrade.ProVersionHelper;
 import de.nimple.util.IntentHelper;
 import de.nimple.util.Lg;
 import de.nimple.util.fragment.MenuHelper;
@@ -118,15 +116,7 @@ public class DisplayContactActivity extends BaseActivity implements IExportExten
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
 		fillUi();
-
-        checkIsPro();
 	}
-
-    private void checkIsPro(){
-        if(!ProVersionHelper.getInstance(ctx).IsPro()) {
-            btExport.setVisibility(View.GONE);
-        }
-    }
 
 	private void save() {
 		contact.setNote(notesText.getText().toString());
@@ -141,8 +131,6 @@ public class DisplayContactActivity extends BaseActivity implements IExportExten
 	public boolean onCreateOptionsMenu(Menu menu) {
 		getMenuInflater().inflate(R.menu.display_contact, menu);
 		boolean ret =  super.onCreateOptionsMenu(menu);
-        ProVersionHelper.getInstance(ctx).addObserver(menu.findItem(R.id.menu_share), ProObservable.State.PRO);
-        ProVersionHelper.getInstance(ctx).notifyObserver();
         return ret;
 	}
 

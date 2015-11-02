@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="de.nimple"
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:installLocation="auto">
 
     <uses-feature
@@ -15,7 +14,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.android.vending.BILLING" />
-    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 
     <application
@@ -41,14 +40,6 @@
         <activity
             android:name="de.nimple.ui.edit.EditNimpleCodeActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="de.nimple.ui.pro.ProActivity"
-            android:label="@string/pro_title"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name="de.nimple.ui.pro.ProActivatedActivity"
-            android:label="@string/pro_activated_title"
             android:screenOrientation="portrait" />
         <activity
             android:name="de.nimple.ui.about.AboutNimpleActivity"

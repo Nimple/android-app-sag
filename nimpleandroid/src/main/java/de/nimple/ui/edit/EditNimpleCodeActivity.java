@@ -34,7 +34,6 @@ import de.nimple.events.SocialDisconnectedEvent;
 import de.nimple.services.nimplecode.Address;
 import de.nimple.services.nimplecode.NimpleCodeHelper;
 import de.nimple.services.nimplecode.NimpleCodeService;
-import de.nimple.services.upgrade.ProVersionHelper;
 import de.nimple.ui.edit.social.SocialLinkedinActivity;
 import de.nimple.ui.edit.social.SocialTwitterActivity;
 import de.nimple.ui.edit.social.SocialXingActivity;
@@ -138,19 +137,7 @@ public class EditNimpleCodeActivity extends Activity implements ActionBarDoneCan
 		EventBus.getDefault().register(this);
 		getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         ButterKnife.inject(this);
-        checkIsPro();
 	}
-
-    private void checkIsPro(){
-        if(!ProVersionHelper.getInstance(getApplicationContext()).IsPro()) {
-            cardNameDropShadow.setVisibility(View.GONE);
-            cardName.setVisibility(View.GONE);
-            editPersonalFragment.setPadding(editPersonalFragment.getPaddingLeft(),      //left,
-                                            0,                                          //top
-                                            editPersonalFragment.getPaddingRight(),     //right
-                                            editPersonalFragment.getPaddingBottom());   //bottom
-        }
-    }
 
 	@Override
 	public void onDoneCallback() {

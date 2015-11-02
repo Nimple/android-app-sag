@@ -219,7 +219,7 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="12dp"
-            android:gravity="right">
+            android:gravity="left">
 
             <ImageView
                 android:id="@+id/facebookRoundIcon"
@@ -256,7 +256,7 @@
 
     </RelativeLayout>
 
-    <LinearLayout
+<!--    <LinearLayout
         android:orientation="horizontal"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -277,6 +277,21 @@
             android:textAlignment="center"
             android:layout_gravity="bottom"
             android:gravity="bottom|center_horizontal" />
+    </LinearLayout>-->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_powered_by"
+            android:layout_gravity="bottom|left" />
+
     </LinearLayout>
 
 </RelativeLayout>

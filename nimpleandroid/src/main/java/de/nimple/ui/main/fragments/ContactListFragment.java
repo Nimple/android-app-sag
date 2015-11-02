@@ -26,7 +26,6 @@ import de.nimple.services.contacts.ContactsService;
 import de.nimple.services.export.Export;
 import de.nimple.services.export.IExportExtender;
 import de.nimple.services.nimplecode.VCardHelper;
-import de.nimple.services.upgrade.ProMenuExtender;
 import de.nimple.util.Lg;
 import de.nimple.util.SharedPrefHelper;
 import de.nimple.util.fragment.MenuHelper;
@@ -65,7 +64,6 @@ public class ContactListFragment extends BaseFragment implements IExportExtender
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         super.onCreateOptionsMenu(menu, inflater);
         inflater.inflate(R.menu.contacts_fragment, menu);
-        ProMenuExtender.registerMenu(menu,ctx);
     }
 
     @Override
