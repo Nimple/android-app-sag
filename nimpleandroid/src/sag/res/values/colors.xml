@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Nimple Default -->
+    <color name="nimple_color">#0899CC</color>
+    <color name="grey_light">#C0C0C0</color>
+    <color name="button_light">#ffffff</color>
+    <color name="nimple_default_text_color">#333333</color>
+    <color name="nimple_text_light_desaturated">#fefefe</color>
+    <color name="nimple_tabbar_indicator">#e5e5e4</color>
+    <color name="nimple_tabbar">#666666</color>
+    <color name="nimple_text_color_hint">#C0C0C0</color>
+    <color name="nimple_text_color_highlight">#8bcfed</color>
+    <color name="nimple_text_color">#646464</color>
+    <color name="nimple_text_header_color">#ffffff</color>
+    <color name="nimple_text_dark">#666666</color>
+    <color name="background_tab_pressed">#f8f8f8</color>
+</resources>

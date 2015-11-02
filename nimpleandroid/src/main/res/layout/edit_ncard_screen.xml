@@ -1,0 +1,403 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:clipToPadding="false"
+    android:fillViewport="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/cardNameEditText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/NimpleTextHeading"
+            android:textSize="15sp"
+            android:textColor="@color/grey_light"
+            android:hint="@string/personal_input_card"
+            android:maxLength="45"
+            android:inputType="textPersonName|textCapSentences|textNoSuggestions"
+            android:nextFocusDown="@+id/firstnameEditText"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp" />
+
+        <View
+            android:id="@+id/cardNameDropShadow"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:layout_below="@+id/cardNameEditText"
+            android:layout_marginTop="10dp"
+            android:alpha="0.1"
+            android:background="@drawable/drop_shadow"/>
+
+        <RelativeLayout
+            android:id="@+id/edit_personal_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:focusable="true"
+            android:layout_below="@id/cardNameDropShadow"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="14dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="47dp">
+
+            <TextView
+                android:id="@+id/checkboxInfoHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/checkbox_info_hint"
+                android:textColor="@color/nimple_color"
+                android:textSize="12sp"/>
+
+
+            <LinearLayout
+                android:id="@+id/firstname_lastname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkboxInfoHint"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/firstnameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="@string/personal_input_firstname"
+                    android:inputType="textPersonName|textCapSentences|textNoSuggestions"
+                    android:nextFocusDown="@+id/lastnameEditText"/>
+
+                <EditText
+                    android:id="@+id/lastnameEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:hint="@string/personal_input_lastname"
+                    android:inputType="textPersonName|textCapSentences|textNoSuggestions"/>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/phoneHomeCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/phoneHomeEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"/>
+
+            <EditText
+                android:id="@+id/phoneHomeEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstname_lastname_layout"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/phoneHomeCheckbox"
+                android:hint="@string/personal_input_phone"
+                android:inputType="phone"/>
+
+            <CheckBox
+                android:id="@+id/phoneMobileCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/phoneMobileEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"/>
+
+            <EditText
+                android:id="@+id/phoneMobileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/phoneHomeEditText"
+                android:layout_alignRight="@id/phoneHomeEditText"
+                android:layout_below="@+id/phoneHomeEditText"
+                android:layout_marginTop="5dp"
+                android:hint="@string/personal_input_mobile"
+                android:inputType="phone"/>
+
+            <CheckBox
+                android:id="@+id/mailCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/mailEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"/>
+
+            <EditText
+                android:id="@+id/mailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/phoneMobileEditText"
+                android:layout_alignRight="@id/phoneMobileEditText"
+                android:layout_below="@+id/phoneMobileEditText"
+                android:layout_marginTop="5dp"
+                android:hint="@string/personal_input_mail"
+                android:inputType="textEmailAddress"/>
+
+            <CheckBox
+                android:id="@+id/companyCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/companyEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"/>
+
+            <EditText
+                android:id="@+id/companyEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mailEditText"
+                android:layout_alignRight="@id/mailEditText"
+                android:layout_below="@+id/mailEditText"
+                android:layout_marginTop="5dp"
+                android:hint="@string/business_input_company"
+                android:inputType="text|textCapSentences|textNoSuggestions"/>
+
+            <CheckBox
+                android:id="@+id/positionCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/positionEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"/>
+
+            <EditText
+                android:id="@+id/positionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/companyEditText"
+                android:layout_alignRight="@id/companyEditText"
+                android:layout_below="@+id/companyEditText"
+                android:layout_marginTop="5dp"
+                android:hint="@string/business_input_job"
+                android:inputType="text|textCapSentences|textNoSuggestions"/>
+
+            <CheckBox
+                android:id="@+id/websiteCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/websiteEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"/>
+
+            <EditText
+                android:id="@+id/websiteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/positionEditText"
+                android:layout_alignLeft="@+id/positionEditText"
+                android:layout_alignRight="@id/positionEditText"
+                android:layout_alignStart="@+id/positionEditText"
+                android:layout_below="@+id/positionEditText"
+                android:layout_marginTop="5dp"
+                android:hint="@string/ncard_edit_website"
+                android:inputType="textUri"/>
+
+            <CheckBox
+                android:id="@+id/adressCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/addressStreetEditText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"/>
+
+            <EditText
+                android:id="@+id/addressStreetEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@id/websiteEditText"
+                android:layout_alignLeft="@+id/websiteEditText"
+                android:layout_alignRight="@id/websiteEditText"
+                android:layout_alignStart="@+id/websiteEditText"
+                android:layout_below="@+id/websiteEditText"
+                android:layout_marginTop="5dp"
+                android:hint="@string/ncard_edit_address_street"
+                android:inputType="text|textCapSentences|textNoSuggestions"/>
+
+            <LinearLayout
+                android:id="@+id/address_plz_city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/addressStreetEditText"
+                android:layout_alignStart="@+id/addressStreetEditText"
+                android:layout_below="@+id/addressStreetEditText"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/addressPostalEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:hint="@string/ncard_edit_address_postal"
+                    android:inputType="text"
+                    android:nextFocusDown="@+id/addressCityEditText"/>
+
+                <EditText
+                    android:id="@+id/addressCityEditText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:hint="@string/ncard_edit_address_city"
+                    android:inputType="text|textCapSentences|textNoSuggestions"/>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/facebookCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/adressCheckbox"
+                android:layout_alignTop="@+id/facebookRoundIcon"
+                android:layout_below="@+id/adressCheckbox"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="1dp"/>
+
+            <ImageView
+                android:id="@+id/facebookRoundIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_plz_city_layout"
+                android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/facebookCheckbox"
+                android:src="@drawable/ic_round_facebook"/>
+
+            <TextView
+                android:id="@+id/facebookTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/facebookRoundIcon"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/facebookRoundIcon"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/social_disconnected"
+                android:textAppearance="@style/NimpleTextDefault"
+                android:textColor="@color/nimple_default_text_color"/>
+
+            <CheckBox
+                android:id="@+id/twitterCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/facebookCheckbox"
+                android:layout_alignTop="@+id/twitterRoundIcon"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="1dp"/>
+
+            <ImageView
+                android:id="@+id/twitterRoundIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/facebookRoundIcon"
+                android:layout_below="@+id/facebookRoundIcon"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_round_twitter"/>
+
+            <TextView
+                android:id="@+id/twitterTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/twitterRoundIcon"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/twitterRoundIcon"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/social_disconnected"
+                android:textAppearance="@style/NimpleTextDefault"
+                android:textColor="@color/nimple_default_text_color"/>
+
+            <CheckBox
+                android:id="@+id/xingCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/twitterCheckbox"
+                android:layout_alignTop="@+id/xingRoundIcon"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="1dp"/>
+
+            <ImageView
+                android:id="@+id/xingRoundIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/twitterRoundIcon"
+                android:layout_below="@+id/twitterRoundIcon"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_round_xing"/>
+
+            <TextView
+                android:id="@+id/xingTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/xingRoundIcon"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/xingRoundIcon"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/social_disconnected"
+                android:textAppearance="@style/NimpleTextDefault"
+                android:textColor="@color/nimple_default_text_color"/>
+
+            <CheckBox
+                android:id="@+id/linkedinCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/xingCheckbox"
+                android:layout_alignTop="@+id/linkedinRoundIcon"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="1dp"/>
+
+            <ImageView
+                android:id="@+id/linkedinRoundIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/xingRoundIcon"
+                android:layout_below="@+id/xingRoundIcon"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/ic_round_linkedin"/>
+
+            <TextView
+                android:id="@+id/linkedinTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/linkedinRoundIcon"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/linkedinRoundIcon"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:text="@string/social_disconnected"
+                android:textAppearance="@style/NimpleTextDefault"
+                android:textColor="@color/nimple_default_text_color"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentTop="true"
+            android:alpha="0.1"
+            android:background="@drawable/drop_shadow"/>
+
+    </RelativeLayout>
+
+
+</ScrollView>

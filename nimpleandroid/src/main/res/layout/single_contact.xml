@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/single_contact_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/contact_selector"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:orientation="vertical"
+        android:layout_margin="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="60dp"
+            android:layout_marginBottom="0dp"
+            android:paddingBottom="0dp">
+
+            <TextView
+                android:id="@+id/contact_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/contact_add"
+                android:paddingBottom="3dp"
+                android:textAppearance="@style/NimpleTextHeading"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/contact_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_name"
+                android:layout_toLeftOf="@+id/contact_add"
+                android:paddingBottom="2dp"
+                android:textAppearance="@style/NimpleTextDefault"
+                android:paddingRight="0dp"
+                android:paddingTop="0dp"
+                android:paddingLeft="0dp" />
+
+            <TextView
+                android:id="@+id/contact_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_number"
+                android:layout_toLeftOf="@+id/contact_add"
+                android:textAppearance="@style/NimpleTextDefault"/>
+
+            <ImageView
+                android:id="@+id/contact_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/ic_nimple_addressbook"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="34dp"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingLeft="10dp"
+            android:gravity="right"
+            android:layout_margin="6dp"
+            android:paddingTop="0dp"
+            android:focusable="false"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/contact_facebook"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_facebook" />
+
+            <ImageView
+                android:id="@+id/contact_twitter"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_twitter"
+                android:layout_marginLeft="8dp" />
+
+            <ImageView
+                android:id="@+id/contact_xing"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_xing"
+                android:layout_marginLeft="8dp" />
+
+            <ImageView
+                android:id="@+id/contact_linkedin"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_round_linkedin"
+                android:layout_marginLeft="8dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#e9e9e9"/>
+</LinearLayout>

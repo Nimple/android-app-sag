@@ -1,0 +1,27 @@
+<RelativeLayout
+    android:id="@+id/contacts_fragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!--android:background="#ededed"-->
+    <ListView
+        android:id="@+id/contactsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:divider="@android:color/transparent"
+        android:background="#ededed"
+        android:dividerHeight="0dp"/>
+
+    <TextView
+        android:id="@+id/noContactsTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/no_contacts_text"
+        android:textAppearance="@style/NimpleTextAnnotation"/>
+
+</RelativeLayout>

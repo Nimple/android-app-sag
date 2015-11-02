@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<resources>
+
+    <string name="msg_camera_framework_bug">C`è un problema con la fotocamera. Un riavvio del telefono può risolvere il problema.</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_meta">Metadati</string>
+    <string name="msg_default_status">Eseguire la scansione di un codice QR.\nInserire il codice in mezzo.</string>
+    <string name="msg_default_time">Tempo</string>
+    <string name="msg_default_type">Tipo</string>
+
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <resources>
+
+        <!-- Nimple Default -->
+        <color name="nimple_color">#F50077</color>
+        <color name="grey_light">#C0C0C0</color>
+        <color name="button_light">#EDEDED</color>
+        <color name="nimple_text_light_desaturated">#F6DFEA</color>
+        <color name="nimple_default_text_color">#333333</color>
+        <color name="nimple_text_color_hint">#C0C0C0</color>
+        <color name="nimple_tabbar_indicator">#FFF</color>
+        <color name="nimple_text_dark">#333</color>
+        <color name="background_tab_pressed">#66e41b4f</color>
+    </resources>
+
+<!--    &lt;!&ndash; Telekom &ndash;&gt;
+    <color name="telekom_base">#F50077</color>
+    <color name="telekom_base_dark">#CB2379</color>
+    <color name="telekom_text_light">#EDEDED</color>
+    <color name="telekom_text_light_desaturated">#F6DFEA</color>
+    <color name="telekom_text_dark">#333</color>
+    <color name="telekom_text_dark_desaturated">#999</color>
+    <color name="telekom_tabbar_indicator">#FFF</color>-->

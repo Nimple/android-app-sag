@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dropdown_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <ImageButton
+        android:id="@+id/ncard_listShow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_action_card_show" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:gravity="fill"
+        android:text="@string/nimpleCards_defaultName"
+        android:textAppearance="@style/NimpleTextHeading"
+        android:textColor="@color/grey_light"
+        android:id="@+id/ncard_name"
+        android:background="#FFFFFF"/>
+
+    <ImageButton
+        android:id="@+id/ncard_add"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_action_add_card"
+        android:padding="0dp"/>
+
+    <ImageButton
+        android:id="@+id/ncard_del"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:src="@drawable/ic_action_discard_dark"
+        android:padding="0dp"/>
+</LinearLayout>

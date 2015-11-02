@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:id="@+id/single_contact_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/card_frame_selector"
+            android:paddingBottom="6dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/ncard_name"
+                android:textAppearance="@style/NimpleTextHeading"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/phoneHomeIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/nameTextView"
+                android:layout_alignTop="@+id/phoneHomeTextView"
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/ic_nimple_phone" />
+
+            <TextView
+                android:id="@+id/phoneHomeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameTextView"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/phoneHomeIcon"
+                android:text="@string/ncard_phone_home"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <ImageView
+                android:id="@+id/phoneMobileIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/phoneHomeIcon"
+                android:layout_alignTop="@+id/phoneMobileTextView"
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/ic_nimple_mobile" />
+
+            <TextView
+                android:id="@+id/phoneMobileTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/phoneHomeTextView"
+                android:layout_below="@+id/phoneHomeTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/ncard_phone_mobile"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <ImageView
+                android:id="@+id/mailIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/phoneMobileIcon"
+                android:layout_alignTop="@+id/mailTextView"
+                android:layout_marginTop="-5dp"
+                android:src="@drawable/ic_nimple_email" />
+
+            <TextView
+                android:id="@+id/mailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/phoneMobileTextView"
+                android:layout_below="@+id/phoneMobileTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/ncard_mail"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <ImageView
+                android:id="@+id/companyIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mailIcon"
+                android:layout_alignTop="@+id/companyTextView"
+                android:layout_marginTop="-3dp"
+                android:src="@drawable/ic_nimple_company" />
+
+            <TextView
+                android:id="@+id/companyTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/mailTextView"
+                android:layout_below="@+id/mailTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/ncard_company"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <ImageView
+                android:id="@+id/jobIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/companyIcon"
+                android:layout_alignTop="@+id/jobTextView"
+                android:layout_marginTop="-3dp"
+                android:src="@drawable/ic_nimple_job" />
+
+            <TextView
+                android:id="@+id/jobTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/companyTextView"
+                android:layout_below="@+id/companyTextView"
+                android:layout_marginTop="10dp"
+                android:text="@string/ncard_job"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <ImageView
+                android:id="@+id/websiteIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/jobIcon"
+                android:layout_alignStart="@+id/jobIcon"
+                android:layout_below="@+id/jobTextView"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/ncard_website"
+                android:src="@drawable/ic_nimple_website" />
+
+            <TextView
+                android:id="@+id/websiteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/jobTextView"
+                android:layout_alignStart="@+id/jobTextView"
+                android:layout_alignTop="@+id/websiteIcon"
+                android:layout_marginTop="3dp"
+                android:text="@string/ncard_website"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <ImageView
+                android:id="@+id/addressIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/websiteIcon"
+                android:layout_alignStart="@+id/websiteIcon"
+                android:layout_below="@+id/websiteTextView"
+                android:layout_marginTop="10dp"
+                android:contentDescription="@string/ncard_address"
+                android:src="@drawable/ic_nimple_address" />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/websiteTextView"
+                android:layout_alignStart="@+id/websiteTextView"
+                android:layout_alignTop="@+id/addressIcon"
+                android:layout_marginTop="3dp"
+                android:text="@string/ncard_address"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <LinearLayout
+                android:id="@+id/linearLayoutButtonAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addressTextView"
+                android:layout_marginTop="15dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/contact_add_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="0.97"
+                    android:background="@drawable/button_rounded_corners"
+                    android:drawableRight="@drawable/ic_nimple_addressbook"
+                    android:gravity="left|center_vertical"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    android:text="@string/add_to_address_book"
+                    android:textAppearance="@style/NimpleTextHeading"
+                    android:textColor="#666666"
+                    android:textStyle="bold"></Button>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayoutButtonExport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayoutButtonAdd"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:paddingLeft="6dp"
+                android:paddingRight="6dp"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/contact_export_button"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="0.97"
+                    android:background="@drawable/button_rounded_corners"
+                    android:drawableRight="@drawable/ic_nimple_export"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:text="@string/export_contact"
+                    android:textAppearance="@style/NimpleTextHeading"
+                    android:textColor="#666666"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="8dp"
+                    android:paddingTop="0dp"></Button>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/card_frame_selector"
+            android:paddingBottom="12dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp" >
+
+            <TextView
+                android:id="@+id/contact_created"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_nimple_timestamp"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <EditText
+                android:id="@+id/notesText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact_created"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:hint="@string/note_hint"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:lines="2" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            android:background="@drawable/card_frame_selector"
+            android:padding="8dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/facebookRoundIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="10dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_round_facebook" />
+
+            <TextView
+                android:id="@+id/facebookProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/facebookRoundIcon"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@+id/facebookRoundIcon"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/contact_facebook"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <ImageView
+                android:id="@+id/twitterRoundIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/facebookRoundIcon"
+                android:layout_below="@+id/facebookRoundIcon"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_round_twitter" />
+
+            <TextView
+                android:id="@+id/twitterProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/facebookProfile"
+                android:layout_alignTop="@+id/twitterRoundIcon"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/contact_twitter"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <ImageView
+                android:id="@+id/xingRoundIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/twitterRoundIcon"
+                android:layout_below="@+id/twitterRoundIcon"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_round_xing" />
+
+            <TextView
+                android:id="@+id/xingProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/twitterProfile"
+                android:layout_alignTop="@+id/xingRoundIcon"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/contact_xing"
+                android:textAppearance="@style/NimpleTextDefault" />
+
+            <ImageView
+                android:id="@+id/linkedinRoundIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/xingRoundIcon"
+                android:layout_below="@+id/xingRoundIcon"
+                android:layout_marginTop="4dp"
+                android:padding="4dp"
+                android:src="@drawable/ic_round_linkedin" />
+
+            <TextView
+                android:id="@+id/linkedinProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/xingProfile"
+                android:layout_alignTop="@+id/linkedinRoundIcon"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="6dp"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="@string/contact_linkedin"
+                android:textAppearance="@style/NimpleTextDefault" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

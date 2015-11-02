@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- About URLs -->
+    <string name="about_url_faq">http://www.appstronauten.com/faq_en/</string>
+    <string name="about_url_imprint">http://www.nimple.de/imprint/</string>
+    <string name="about_url_terms">http://www.nimple.de/terms/</string>
+    <string name="about_url_disclaimer">http://www.nimple.de/disclaimer/</string>
+    <string name="about_url_facebook">http://www.nimple.de/facebook/</string>
+    <string name="about_url_twitter">http://www.nimple.de/twitter</string>
+
+    <!-- Form validation -->
+    <string name="form_error_firstname">Entrer votre prénom.</string>
+    <string name="form_error_lastname">Entrer votre nom.</string>
+    <string name="form_error_mail_invalid">Adresse e-mail n\'est pas valide.</string>
+
+    <!-- Actionbar -->
+    <string name="ab_delete">Supprimer</string>
+    <string name="ab_finish">OK</string>
+    <string name="ab_add">Ajouter</string>
+    <string name="ab_share">Recommander Nimple</string>
+    <string name="ab_feedback">Feedback</string>
+    <string name="ab_about">Informations</string>
+    <string name="ab_discard">Annuler</string>
+    <string name="ab_done">OK</string>
+
+    <!-- Titles -->
+    <string name="ncard_title">Carte</string>
+    <string name="ncode_title">Code</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="about_title">Informations</string>
+    <string name="edit_title">Ma carte</string>
+    <string name="social_title">Réseaux sociaux</string>
+
+    <!-- Bootstrap -->
+    <string name="bootstrap_first_contact">Votre premier contact</string>
+    <string name="created_note">Créé avec nimpleapp.com</string>
+
+    <!-- Hints -->
+    <string name="checkbox_info_hint">Les cases à cocher contrôlent la visibilité de votre carte et votre code</string>
+    <string name="add_to_address_book">Enregistrer dans vos contacts</string>
+
+    <!-- About -->
+    <string name="about_faq">FAQ</string>
+    <string name="about_imprint">Mentions légales</string>
+    <string name="about_terms">Conditions générales</string>
+    <string name="about_disclaimer">Protection des données</string>
+    <string name="about_facebook">Nimple sur Facebook</string>
+    <string name="about_twitter">Nimple sur Twitter</string>
+
+    <!-- Socialism -->
+    <string name="social_header">connectez-vous avec %s</string>
+    <string name="social_connected">être connecté</string>
+    <string name="social_disconnected">connectez-vous</string>
+    <string name="no_internet_connection">Pas de connexion internet.</string>
+    <string name="social_connected_toast">Être connecté avec %s.</string>
+    <string name="social_disconnected_toast">Ne pas être connecté avec %s.</string>
+
+    <!-- Dialogs -->
+    <string name="button_save">Enregistrer</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Annuler</string>
+    <string name="delete_contact_dialog">Supprimer le contact %s?</string>
+    <string name="contact_picker_fail">Contact n\'a pas de nom.</string>
+    <string name="contact_scan_failed">Nimple ne peut pas lire le code.</string>
+    <string name="contact_scan_duplicated">Le contact %s est ajouté à vos contacts.</string>
+    <string name="save_contact_question">Enregistrer ce contact dans vos contacts?</string>
+
+    <!-- Feedback -->
+    <string name="send_mail">Envoyer un mail</string>
+    <string name="feedback_chooser">Envoyer un mail avec:</string>
+    <string name="feedback_email">feedback.android@nimple.de</string>
+    <string name="feedback_subject">[Feedback] Android App</string>
+    <string name="feedback_text">J\'aime votre application…</string>
+
+    <!-- Share APP -->
+    <string name="share_app_chooser">Recommander Nimple avec:</string>
+    <string name="share_app_subject">Nimple - Networking Simple application</string>
+    <string name="share_app_text">J\'utilise l\'application Nimple - Networking Simple. Téléchargement: www.nimpleapp.com</string>
+
+    <!-- Home Screen w/o user input -->
+    <string name="add_contact_hint">Scanner avec\nun nouveau contact</string>
+    <string name="swype_left_hint">Sur la gauche vous\npouvez créer votre carte</string>
+    <string name="swype_right_hint">Sur la droite vous\npouvez voir vos contacts</string>
+
+    <!-- User Input Personal -->
+    <string name="personal_input_firstname">Prénom</string>
+    <string name="personal_input_lastname">Nom</string>
+    <string name="personal_input_phone">Numéro de téléphone</string>
+    <string name="personal_input_mail">Adresse e-mail</string>
+
+    <!-- User Input Business -->
+    <string name="business_input_company">Société/université/école</string>
+    <string name="business_input_job">Profession/position</string>
+
+    <!-- User Input Others -->
+    <string name="ncard_edit_website">Site web</string>
+    <string name="ncard_edit_address_street">Rue</string>
+    <string name="ncard_edit_address_postal">CP</string>
+    <string name="ncard_edit_address_city">Ville</string>
+
+    <!-- nimple-card fragement -->
+    <string name="ncard_name">Nom</string>
+    <string name="ncard_phone">Numéro de téléphone</string>
+    <string name="ncard_mail">Adresse e-mail</string>
+    <string name="ncard_company">Société/université/école</string>
+    <string name="ncard_job">Profession/position</string>
+    <string name="ncard_website">Site web</string>
+    <string name="ncard_address">Adresse</string>
+    <string name="ncard_footer">Votre Code transfère vos données</string>
+
+    <!-- nimple-code fragement -->
+    <string name="ncode_footer">Votre code peut être scanner par un lecteur de code à barres ou Nimple</string>
+
+    <!-- contacts fragement -->
+    <string name="contact_added_toast">Vous avez un nouveau contact.</string>
+    <string name="no_contacts_text">Scanner avec + un nouveau contact</string>
+
+    <!-- contact details -->
+    <string name="note_hint">Notes</string>
+    <string name="contact_facebook">Aucun profil Facebook</string>
+    <string name="contact_twitter">Aucun profil Twitter</string>
+    <string name="contact_xing">Aucun profil XING</string>
+    <string name="contact_linkedin">Aucun profil LinkedIn</string>
+    <string name="button_delete">Supprimer</string>
+
+    <!-- export -->
+    <string name="ncard_phone_home">Numéro de téléphone</string>
+    <string name="ncard_phone_mobile">Numéro de portable</string>
+    <string name="ab_export_contacts">Exporter les contacts</string>
+    <string name="ab_export_code">Exporter le code</string>
+    <string name="ab_export_card">Exporter la carte</string>
+    <string name="ab_export_err">Impossible d\'enregistrer le contenu</string>
+    <string name="ab_export_save">Le contenu enregistré dans le dossier "Downloads"</string>
+
+    <!-- share -->
+    <string name="ab_share_contacts">Dépêcher les contacts</string>
+    <string name="ab_share_contact">Dépêcher le contact</string>
+    <string name="ab_share_code">Dépêcher le code</string>
+    <string name="ab_share_card">Dépêcher la carte</string>
+
+
+    <string name="ab_export">Exporter</string>
+    <string name="export_contact">Exporter ce contact</string>
+    <string name="export_dia_header">Exporter ce fichier</string>
+    <string name="export_dia_card">Exporter à carte SD</string>
+    <string name="export_dia_mail">Envoyer un mail</string>
+    <string name="export_dia_cancel">Annuler</string>
+
+    <!-- several cards -->
+    <string name="nimpleCards_defaultName">Nimple Carte</string>
+    <string name="del_ncard_question">Supprimer cette carte?</string>
+    <string name="add_ncard_question">Ajouter une carte?</string>
+    <string name="personal_input_mobile">Numéro de portable</string>
+    <string name="personal_input_card">Nom de la carte</string>
+    <string name="form_error_card_invalid">Nom de la carte ne est pas valide.</string>
+
+    <!-- ProVersion -->
+    <string name="ab_proVersion">Déverrouillez la version pro</string>
+    <string name="pro_features_text">Nimple Pro vous donnera de nouvelles fonctionnalités</string>
+    <string name="pro_feature_export">Exporter et enregirter votre carte, code and contact/s</string>
+    <string name="pro_feature_share">Dépêcher votre carte, code and contact/s via mail via d\'autres médias</string>
+    <string name="pro_feature_cards">Créez plusieurs cartes et codes (p.ex. un pour société, un pour privé et un pour université)</string>
+    <string name="pro_bt_buy">Améliorer à la version pro</string>
+    <string name="pro_copyright">Droit d\'auteur</string>
+    <string name="pro_title">Acheter pro version</string>
+    <string name="pro_purchase_succesfull">Se il vous plaît redémarrer l\'application Nimple pour finaliser l\'achat</string>
+    <string name="pro_purchase_err">Achat échoué.</string>
+    <string name="pro_congrats">Félicitation, Nimple Pro est acheté!</string>
+    <string name="pro_restart">Redémarrer Nimple</string>
+    <string name="pro_activated_title">Félicitation</string>
+</resources>

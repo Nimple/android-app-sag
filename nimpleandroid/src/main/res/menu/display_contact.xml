@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/menu_del"
+        android:icon="@drawable/ic_action_discard"
+        android:showAsAction="always"
+        android:title="@string/ab_delete"/>
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/ic_action_share_single_contact"
+        android:showAsAction="always"
+        android:title="@string/ab_share_contact"/>
+    <item
+        android:id="@+id/menu_finish"
+        android:icon="@drawable/ic_action_accept"
+        android:showAsAction="always"
+        android:title="@string/ab_finish"/>
+</menu>

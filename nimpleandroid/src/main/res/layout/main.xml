@@ -1,0 +1,44 @@
+<LinearLayout
+    android:id="@+id/screen"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <de.nimple.ui.parts.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/nimple_tabbar"
+        android:fontFamily="sans-serif-light"
+        android:textColor="@color/nimple_text_light_desaturated"
+        android:textSize="14sp"
+        app:pstsDividerColor="@color/transparent"
+        app:pstsIndicatorColor="@color/nimple_tabbar_indicator"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsShouldExpand="true"
+        app:pstsTextAllCaps="false"
+        app:pstsUnderlineColor="@color/nimple_text_dark"
+        app:pstsUnderlineHeight="0dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:background="#ededed"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:layout_alignParentTop="true"
+            android:alpha="0.1"
+            android:background="@drawable/drop_shadow"/>
+
+    </RelativeLayout>
+</LinearLayout>

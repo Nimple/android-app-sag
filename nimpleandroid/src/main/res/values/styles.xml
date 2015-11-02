@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- This is our main app theme -->
+    <style name="Theme.Nimple" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:actionBarStyle">@style/Widget.Styled.ActionBar</item>
+
+        <!-- Generated with http://android-holo-colors.com -->
+        <item name="android:editTextStyle">@style/EditTextAppTheme</item>
+        <item name="android:textColorHighlight">@color/nimple_text_color_highlight</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextViewAppTheme</item>
+        <item name="android:checkboxStyle">@style/CheckBoxAppTheme</item>
+        <item name="android:radioButtonStyle">@style/RadioButtonAppTheme</item>
+        <item name="android:buttonStyle">@style/ButtonAppTheme</item>
+        <item name="android:imageButtonStyle">@style/ImageButtonAppTheme</item>
+        <item name="android:spinnerStyle">@style/SpinnerAppTheme</item>
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerDropDownItemAppTheme</item>
+        <item name="android:progressBarStyleHorizontal">@style/ProgressBarAppTheme</item>
+        <item name="android:seekBarStyle">@style/SeekBarAppTheme</item>
+        <item name="android:ratingBarStyle">@style/RatingBarAppTheme</item>
+        <item name="android:ratingBarStyleIndicator">@style/RatingBarBigAppTheme</item>
+        <item name="android:ratingBarStyleSmall">@style/RatingBarSmallAppTheme</item>
+        <item name="android:buttonStyleToggle">@style/ToggleAppTheme</item>
+        <item name="android:spinnerItemStyle">@style/SpinnerItemAppTheme</item>
+        <item name="android:textSelectHandleLeft">@drawable/apptheme_text_select_handle_left</item>
+        <item name="android:textSelectHandleRight">@drawable/apptheme_text_select_handle_right
+        </item>
+        <item name="android:textSelectHandle">@drawable/apptheme_text_select_handle_middle</item>
+
+        <!-- Android Action Bar Style Generator -->
+        <item name="android:popupMenuStyle">@style/PopupMenu.Nimple</item>
+        <item name="android:dropDownListViewStyle">@style/DropDownListView.Nimple</item>
+        <item name="android:actionDropDownStyle">@style/DropDownNav.Nimple
+        </item>
+        <item name="android:panelFullBackground">@color/nimple_color</item>
+
+        <!-- Light.DarkActionBar specific -->
+        <item name="android:actionBarWidgetTheme">@style/Theme.Nimple.Widget
+        </item>
+
+        <!-- Samsung actionbar item pressed color -->
+        <item name="android:actionBarItemBackground">@drawable/selectable_background_nimple</item>
+
+        <!-- Old devices selectable actionbar menu item bg -->
+        <item name="android:selectableItemBackground">@drawable/selectable_background_nimple</item>
+
+        <!-- Material Enhancements -->
+        <item name="android:actionOverflowButtonStyle">@style/OverflowReplacement</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_action_back</item>
+        <item name="android:windowContentOverlay">@null</item>
+
+        <!-- Should be applied on Preferences -->
+        <item name="android:textAppearanceMedium">@style/NimpleTextDefault.Medium</item>
+        <item name="android:textAppearanceSmall">@style/NimpleTextDefault.Small</item>
+    </style>
+
+    <style name="NimpleTextButton" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/nimple_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NimpleTextForm" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/nimple_text_color</item>
+        <item name="android:textColorHint">#969696</item>
+    </style>
+
+    <style name="NimpleTextDefault" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/nimple_text_color</item>
+    </style>
+
+    <style name="NimpleTextDefault.Small" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">13sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/nimple_text_color</item>
+    </style>
+
+    <style name="NimpleTextDefault.Medium" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">@color/nimple_text_color</item>
+    </style>
+
+    <style name="NimpleTextHeading" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">@color/nimple_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NimpleTextAnnotation" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textColor">#a0a0a0</item>
+    </style>
+
+    <!-- "Implementation" of our AB custom theme -->
+    <style name="Widget.Styled.ActionBar" parent="android:Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:titleTextStyle">@style/TitleText</item>
+        <item name="android:background">@color/nimple_color</item>
+        <item name="android:icon">@drawable/ic_nimple</item>
+        <item name="android:height">@dimen/actionbar_height</item>
+    </style>
+
+    <!-- More customizations for ABS -->
+    <style name="TitleText">
+        <item name="android:textColor">@color/nimple_text_header_color</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

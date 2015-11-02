@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/about_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/NimpleTextDefault"
+        android:text="SAG Cards ist eine für die Software AG gebrandete Version von Nimple - Networking Simple. SAG Cards ist ausschließlich für die Software AG und deren Mitarbeitenden lizensiert.\r\nSollten Sie kein Mitarbeitender der Software AG sein,laden Sie sich bitte die offizielle Version von Nimple über nimple.de herunter."
+        android:id="@+id/textView2" />
+</LinearLayout>

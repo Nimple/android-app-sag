@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/no_ncode_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:id="@+id/arrow_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_arrow_up" />
+
+        <TextView
+            android:id="@+id/person_add_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/arrow_up"
+            android:layout_marginRight="30dp"
+            android:text="@string/add_contact_hint"
+            android:textAppearance="@style/NimpleTextDefault" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/person_add_text"
+            android:layout_below="@id/arrow_up"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="-4dp"
+            android:src="@drawable/ic_action_add_person_startscreen" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/launcher_icon_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/nimple_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_nimple_launcher" />
+
+        <TextView
+            android:id="@+id/nimple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/app_name"
+            android:textAppearance="@style/NimpleTextHeading"
+            android:textColor="@color/nimple_color" />
+
+        <TextView
+            android:id="@+id/slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_slogan"
+            android:textAppearance="@style/NimpleTextDefault"
+            android:textColor="@color/nimple_color" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/swype_right_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/launcher_icon_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/swype_left_hint"
+            android:textAppearance="@style/NimpleTextDefault" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_swype_right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/swype_right_layout"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:id="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/ic_swype_left" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/launcher_icon_layout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_logo_sponsor"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="@string/swype_right_hint"
+        android:textAppearance="@style/NimpleTextDefault"
+        android:layout_alignBottom="@+id/swype_right_layout"
+        android:layout_alignRight="@+id/linearLayout2"
+        android:layout_alignEnd="@+id/linearLayout2" />
+
+</RelativeLayout>

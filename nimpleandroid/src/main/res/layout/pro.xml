@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:fillViewport="true"
+    android:weightSum="1"
+    android:id="@+id/pro_layout">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pro_scrollView" >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/nimple_banner_pro"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.98"
+                android:weightSum="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pro_features_text"
+                    android:id="@+id/textView3"
+                    android:layout_gravity="center_horizontal"
+                    android:autoText="false"
+                    android:gravity="center_horizontal"
+                    android:textSize="12dp"
+                    android:textStyle="bold"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="10dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="10dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/icon_addCards"
+                        android:src="@drawable/ic_action_add_card_dark"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_feature_cards"
+                        android:id="@+id/text_addCards"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="20dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:layout_gravity="center_horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/icon_export"
+                        android:src="@drawable/ic_action_export_dark"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_feature_export"
+                        android:id="@+id/text_export"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/icon_sahreCards"
+                        android:src="@drawable/ic_action_share_card_dark"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="20dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pro_feature_share"
+                        android:id="@+id/text_shareCards"
+                        android:textSize="12dp"
+                        android:layout_gravity="center_vertical"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="5dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_weight="0.34">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/nimple_color"
+                    android:text="@string/pro_bt_buy"
+                    android:id="@+id/nimple_button_buy_pro"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20dp"
+                    android:textColor="#EEEEEE" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
