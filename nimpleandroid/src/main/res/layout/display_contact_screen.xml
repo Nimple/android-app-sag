@@ -3,13 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ededed"
-    android:fillViewport="true" >
+    android:fillViewport="true">
 
     <LinearLayout
         android:id="@+id/single_contact_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -191,7 +191,7 @@
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_weight="0.97"
-                    android:background="@drawable/button_rounded_corners"
+                    android:background="#ffffff"
                     android:drawableRight="@drawable/ic_nimple_addressbook"
                     android:gravity="left|center_vertical"
                     android:paddingBottom="5dp"
@@ -201,7 +201,7 @@
                     android:text="@string/add_to_address_book"
                     android:textAppearance="@style/NimpleTextHeading"
                     android:textColor="#666666"
-                    android:textStyle="bold"></Button>
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout
@@ -221,18 +221,18 @@
                     android:layout_width="0dp"
                     android:layout_height="40dp"
                     android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="8dp"
                     android:layout_weight="0.97"
-                    android:background="@drawable/button_rounded_corners"
+                    android:background="#ffffff"
                     android:drawableRight="@drawable/ic_nimple_export"
                     android:gravity="left|center_vertical"
                     android:paddingLeft="20dp"
                     android:paddingRight="5dp"
+                    android:paddingTop="0dp"
                     android:text="@string/export_contact"
                     android:textAppearance="@style/NimpleTextHeading"
                     android:textColor="#666666"
-                    android:textStyle="bold"
-                    android:layout_marginBottom="8dp"
-                    android:paddingTop="0dp"></Button>
+                    android:textStyle="bold" />
 
             </LinearLayout>
         </RelativeLayout>
@@ -247,7 +247,7 @@
             android:paddingBottom="12dp"
             android:paddingLeft="8dp"
             android:paddingRight="8dp"
-            android:paddingTop="8dp" >
+            android:paddingTop="8dp">
 
             <TextView
                 android:id="@+id/contact_created"
@@ -276,8 +276,8 @@
             android:layout_height="match_parent"
             android:layout_margin="7dp"
             android:background="@drawable/card_frame_selector"
-            android:padding="8dp"
-            android:gravity="center_vertical">
+            android:gravity="center_vertical"
+            android:padding="8dp">
 
             <ImageView
                 android:id="@+id/facebookRoundIcon"

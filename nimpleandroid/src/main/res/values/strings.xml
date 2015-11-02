@@ -1,135 +1,135 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-	<!-- Facebook App Id -->
-	<string name="app_id" translatable="false">1451876021700653</string>
+    <!-- Facebook App Id -->
+    <string name="app_id" translatable="false">1451876021700653</string>
 
-	<!-- General strings -->
-	<string name="app_name" translatable="false">Nimple</string>
-	<string name="app_slogan" translatable="false">Networking Simple</string>
+    <!-- General strings -->
+    <string name="app_name" translatable="false">SCards</string>
+    <string name="app_slogan" translatable="false">Networking Simple</string>
 
-	<!-- About URLs -->
-	<string name="about_url_faq">http://www.appstronauten.com/faq_en/</string>
-	<string name="about_url_imprint">http://www.nimple.de/imprint/</string>
-	<string name="about_url_terms">http://www.nimple.de/terms/</string>
-	<string name="about_url_disclaimer">http://www.nimple.de/disclaimer/</string>
-	<string name="about_url_facebook">http://www.nimple.de/facebook/</string>
-	<string name="about_url_twitter">http://www.nimple.de/twitter</string>
+    <!-- About URLs -->
+    <string name="about_url_faq">http://www.appstronauten.com/faq_en/</string>
+    <string name="about_url_imprint">http://www.nimple.de/imprint/</string>
+    <string name="about_url_terms">http://www.nimple.de/terms/</string>
+    <string name="about_url_disclaimer">http://www.nimple.de/disclaimer/</string>
+    <string name="about_url_facebook">http://www.nimple.de/facebook/</string>
+    <string name="about_url_twitter">http://www.nimple.de/twitter</string>
 
-	<!-- Form validation -->
-	<string name="form_error_firstname">Please fill in first name.</string>
-	<string name="form_error_lastname">Please fill in last name.</string>
-	<string name="form_error_mail_invalid">Email address is invalid.</string>
+    <!-- Form validation -->
+    <string name="form_error_firstname">Please fill in first name.</string>
+    <string name="form_error_lastname">Please fill in last name.</string>
+    <string name="form_error_mail_invalid">Email address is invalid.</string>
 
-	<!-- Actionbar -->
-	<string name="ab_delete">Delete</string>
-	<string name="ab_finish">Finish</string>
-	<string name="ab_add">Add</string>
-	<string name="ab_share">Share Nimple</string>
-	<string name="ab_feedback">Feedback</string>
-	<string name="ab_about">About</string>
-	<string name="ab_discard">Discard</string>
-	<string name="ab_done">Done</string>
+    <!-- Actionbar -->
+    <string name="ab_delete">Delete</string>
+    <string name="ab_finish">Finish</string>
+    <string name="ab_add">Add</string>
+    <string name="ab_share">Share Nimple</string>
+    <string name="ab_feedback">Feedback</string>
+    <string name="ab_about">About</string>
+    <string name="ab_discard">Discard</string>
+    <string name="ab_done">Done</string>
 
-	 <!-- Titles -->
-	<string name="ncard_title">Card</string>
-	<string name="ncode_title">Code</string>
-	<string name="contacts_title">Contacts</string>
-	<string name="about_title">About</string>
-	<string name="edit_title">Edit card</string>
-	<string name="social_title">Social Networks</string>
+    <!-- Titles -->
+    <string name="ncard_title">Card</string>
+    <string name="ncode_title">Code</string>
+    <string name="contacts_title">Contacts</string>
+    <string name="about_title">About</string>
+    <string name="edit_title">Edit card</string>
+    <string name="social_title">Social Networks</string>
 
-	 <!-- Bootstrap -->
-	<string name="bootstrap_first_contact">Nimple App - Your first contact</string>
-	<string name="created_note">Created with nimpleapp.com</string>
+    <!-- Bootstrap -->
+    <string name="bootstrap_first_contact">Nimple App - Your first contact</string>
+    <string name="created_note">Created with nimpleapp.com</string>
 
-	<!-- Hints -->
-	<string name="checkbox_info_hint">You can change the visibility of items on your nimple-card via checking the check boxes.</string>
-	<string name="add_to_address_book">Add to address book</string>
+    <!-- Hints -->
+    <string name="checkbox_info_hint">You can change the visibility of items on your nimple-card via checking the check boxes.</string>
+    <string name="add_to_address_book">Add to address book</string>
 
-	<!-- About -->
-	<string name="about_faq">FAQ</string>
-	<string name="about_imprint">Imprint</string>
-	<string name="about_terms">Terms and Conditions</string>
-	<string name="about_disclaimer">Privacy Policy</string>
-	<string name="about_facebook">Nimple on Facebook</string>
-	<string name="about_twitter">Nimple on Twitter</string>
+    <!-- About -->
+    <string name="about_faq">FAQ</string>
+    <string name="about_imprint">Imprint</string>
+    <string name="about_terms">Terms and Conditions</string>
+    <string name="about_disclaimer">Privacy Policy</string>
+    <string name="about_facebook">Nimple on Facebook</string>
+    <string name="about_twitter">Nimple on Twitter</string>
 
-	 <!-- Socialism -->
+    <!-- Socialism -->
     <string name="social_header">connect to %s</string>
-	<string name="social_connected">connected</string>
-	<string name="social_disconnected">connect</string>
-	<string name="no_internet_connection">No internet connection.</string>
-	<string name="social_connected_toast">Your Nimple-Card is now linked with %s.</string>
-	<string name="social_disconnected_toast">Your Nimple-Card is disconnected from %s.</string>
+    <string name="social_connected">connected</string>
+    <string name="social_disconnected">connect</string>
+    <string name="no_internet_connection">No internet connection.</string>
+    <string name="social_connected_toast">Your Nimple-Card is now linked with %s.</string>
+    <string name="social_disconnected_toast">Your Nimple-Card is disconnected from %s.</string>
 
-	<!-- Dialogs -->
-	<string name="button_save">Save</string>
-	<string name="button_ok">OK</string>
-	<string name="button_cancel">Cancel</string>
-	<string name="delete_contact_dialog">Delete contact %s?</string>
-	<string name="contact_picker_fail">Contact has no name.</string>
-	<string name="contact_scan_failed">Nimple-Code could not be scanned.</string>
-	<string name="contact_scan_duplicated">%s already exists in your contact list.</string>
-	<string name="save_contact_question">Save contact to your address book?</string>
+    <!-- Dialogs -->
+    <string name="button_save">Save</string>
+    <string name="button_ok">OK</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="delete_contact_dialog">Delete contact %s?</string>
+    <string name="contact_picker_fail">Contact has no name.</string>
+    <string name="contact_scan_failed">Nimple-Code could not be scanned.</string>
+    <string name="contact_scan_duplicated">%s already exists in your contact list.</string>
+    <string name="save_contact_question">Save contact to your address book?</string>
 
-	<!-- Feedback -->
-	<string name="send_mail">Send mail</string>
-	<string name="feedback_chooser">Send mail with:</string>
-	<string name="feedback_email">feedback.android@nimple.de</string>
-	<string name="feedback_subject">[Feedback] Android App</string>
-	<string name="feedback_text">Your app is awesome/crap, because</string>
+    <!-- Feedback -->
+    <string name="send_mail">Send mail</string>
+    <string name="feedback_chooser">Send mail with:</string>
+    <string name="feedback_email">feedback.android@nimple.de</string>
+    <string name="feedback_subject">[Feedback] Android App</string>
+    <string name="feedback_text">Your app is awesome/crap, because</string>
 
-	<!-- Share APP -->
-	<string name="share_app_chooser">Share Nimple with:</string>
-	<string name="share_app_subject">Nimple - Networking Simple app</string>
-	<string name="share_app_text">I am networking simple with Nimple. Try it out and download it: www.nimpleapp.com</string>
+    <!-- Share APP -->
+    <string name="share_app_chooser">Share Nimple with:</string>
+    <string name="share_app_subject">Nimple - Networking Simple app</string>
+    <string name="share_app_text">I am networking simple with Nimple. Try it out and download it: www.nimpleapp.com</string>
 
-	<!-- Home Screen w/o user input -->
-	<string name="add_contact_hint">Scan via\nnew contacts</string>
-	<string name="swype_left_hint">Swipe left to\nedit your card</string>
-	<string name="swype_right_hint">Swipe right to\nsee your contacts</string>
+    <!-- Home Screen w/o user input -->
+    <string name="add_contact_hint">Scan via\nnew contacts</string>
+    <string name="swype_left_hint">Swipe left to\nedit your card</string>
+    <string name="swype_right_hint">Swipe right to\nsee your contacts</string>
 
-	<!-- User Input Personal -->
-	<string name="personal_input_firstname">First name</string>
-	<string name="personal_input_lastname">Last name</string>
-	<string name="personal_input_phone">Phone number</string>
-	<string name="personal_input_mail">Email address</string>
+    <!-- User Input Personal -->
+    <string name="personal_input_firstname">First name</string>
+    <string name="personal_input_lastname">Last name</string>
+    <string name="personal_input_phone">Phone number</string>
+    <string name="personal_input_mail">Email address</string>
 
-	<!-- User Input Business -->
-	<string name="business_input_company">Company/University/School</string>
-	<string name="business_input_job">Job/Position</string>
+    <!-- User Input Business -->
+    <string name="business_input_company">Company/University/School</string>
+    <string name="business_input_job">Job/Position</string>
 
-	<!-- User Input Others -->
-	<string name="ncard_edit_website">Website</string>
-	<string name="ncard_edit_address_street">Street</string>
-	<string name="ncard_edit_address_postal">Postal</string>
-	<string name="ncard_edit_address_city">City</string>
+    <!-- User Input Others -->
+    <string name="ncard_edit_website">Website</string>
+    <string name="ncard_edit_address_street">Street</string>
+    <string name="ncard_edit_address_postal">Postal</string>
+    <string name="ncard_edit_address_city">City</string>
 
-	<!-- nimple-card fragement -->
-	<string name="ncard_name">Name</string>
+    <!-- nimple-card fragement -->
+    <string name="ncard_name">Name</string>
     <string name="ncard_phone">Telephone</string>
-	<string name="ncard_mail">Email address</string>
-	<string name="ncard_company">Company/University</string>
-	<string name="ncard_job">Job/Position</string>
-	<string name="ncard_website">Website</string>
-	<string name="ncard_address">Address</string>
-	<string name="ncard_footer">Your Card will be transferred via scanning your Code</string>
+    <string name="ncard_mail">Email address</string>
+    <string name="ncard_company">Company/University</string>
+    <string name="ncard_job">Job/Position</string>
+    <string name="ncard_website">Website</string>
+    <string name="ncard_address">Address</string>
+    <string name="ncard_footer">Your Card will be transferred via scanning your Code</string>
 
-	<!-- nimple-code fragement -->
-	<string name="ncode_footer">Your code can be scanned with any barcode reader or Nimple</string>
+    <!-- nimple-code fragement -->
+    <string name="ncode_footer">Your code can be scanned with any barcode reader or Nimple</string>
 
-	<!-- contacts fragement -->
-	<string name="contact_added_toast">You have got a new contact.</string>
-	<string name="no_contacts_text">Scan via + new contacts</string>
+    <!-- contacts fragement -->
+    <string name="contact_added_toast">You have got a new contact.</string>
+    <string name="no_contacts_text">Scan via + new contacts</string>
 
-	<!-- contact details -->
-	<string name="note_hint">Notes</string>
-	<string name="contact_facebook">No Facebook profile</string>
-	<string name="contact_twitter">No Twitter profile</string>
-	<string name="contact_xing">No XING profile</string>
-	<string name="contact_linkedin">No LinkedIn profile</string>
-	<string name="button_delete">Delete</string>
+    <!-- contact details -->
+    <string name="note_hint">Notes</string>
+    <string name="contact_facebook">No Facebook profile</string>
+    <string name="contact_twitter">No Twitter profile</string>
+    <string name="contact_xing">No XING profile</string>
+    <string name="contact_linkedin">No LinkedIn profile</string>
+    <string name="button_delete">Delete</string>
 
 
     <!-- export -->

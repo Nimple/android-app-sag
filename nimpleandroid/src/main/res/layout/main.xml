@@ -1,7 +1,6 @@
-<LinearLayout
-    android:id="@+id/screen"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/screen"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -10,17 +9,17 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:background="@color/nimple_tabbar"
+        android:background="#0899cc"
+        android:elevation="8dp"
         android:fontFamily="sans-serif-light"
         android:textColor="@color/nimple_text_light_desaturated"
         android:textSize="14sp"
         app:pstsDividerColor="@color/transparent"
-        app:pstsIndicatorColor="@color/nimple_tabbar_indicator"
+        app:pstsIndicatorColor="#ffa200"
         app:pstsIndicatorHeight="3dp"
         app:pstsShouldExpand="true"
         app:pstsTextAllCaps="false"
-        app:pstsUnderlineColor="@color/nimple_text_dark"
-        app:pstsUnderlineHeight="0dp"/>
+        app:pstsUnderlineHeight="0dp" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -31,14 +30,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
-            android:background="#ededed"/>
+            android:background="#ededed" />
 
         <View
             android:layout_width="match_parent"
             android:layout_height="4dp"
             android:layout_alignParentTop="true"
             android:alpha="0.1"
-            android:background="@drawable/drop_shadow"/>
+            android:background="@drawable/drop_shadow" />
 
     </RelativeLayout>
 </LinearLayout>

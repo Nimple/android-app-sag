@@ -2,116 +2,18 @@
 <items version="2" >
 
     <item
-        jar="/Users/bjohn/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/5.1.2/daf5472b0df6dabaceb6ad755b3812535863965a/butterknife-5.1.2.jar"
+        jar="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/exploded-aar/com.android.support/design/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="daf5472b0df6dabaceb6ad755b3812535863965a">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/butterknife-5.1.2-b7ec015f8f60e1885c245d387bf630ed35d1d37e.jar" />
+        sha1="19026d31f5d3ae868db81319671a642be5fbba08">
+        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/classes-4988e10e1a56941f1480ce4bc431b87b3fcd7c12.jar" />
     </item>
     <item
-        jar="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/3.21.1/jars/classes.jar"
+        jar="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.0/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="0285ad8da812e92dda76ed5d0dcba05724c7911d">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/classes-545b94b31903744c5868a68f99f6a5c60eb30f1a.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/.gradle/caches/modules-2/files-2.1/com.squareup.dagger/dagger/1.2.2/e8f912ee19ad84958510883ea191135276b091f8/dagger-1.2.2.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="e8f912ee19ad84958510883ea191135276b091f8">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/dagger-1.2.2-0d4163cb288f1b7125101888e1327404758b4b54.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/.gradle/caches/modules-2/files-2.1/de.greenrobot/greendao/1.3.7/dda08161d004c4df96938da6909f1c2b96cd33c8/greendao-1.3.7.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="dda08161d004c4df96938da6909f1c2b96cd33c8">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/greendao-1.3.7-826d643624214c75b50cd162f19dbe0d9c1961ba.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/exploded-aar/com.android.support/support-v13/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="1a57337a520bf40b9ad1e074cb780527dffa1aac">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/classes-c6bd7f68404e60d9af951ea3a2d5f96a68988b90.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.0/support-annotations-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="92e3fc113ec3ee36b64603a38857b95700025633">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/support-annotations-23.1.0-759db216354ca29b36369dd526bffa51bed71123.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/exploded-aar/com.android.support/support-v13/23.1.0/jars/libs/internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="076c7d9e22cc325b8008ff799e0c06dfb8eefdf3">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-4e25eba04376c3f60bd499cc40d3f24b40019cf5.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3/5fc52c41ef0239d1093a1eb7c3697036183677ce/gson-2.3.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="5fc52c41ef0239d1093a1eb7c3697036183677ce">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/gson-2.3-654c5f2db760f456fc05b4370f8772cf3619e3d8.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.2.1/a18ff12a9ab5ae52fd30d42f134517997568231e/eventbus-2.2.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="a18ff12a9ab5ae52fd30d42f134517997568231e">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/eventbus-2.2.1-d071e0903bbad9144c5b13b6f5c3e014e448e78a.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/.gradle/caches/modules-2/files-2.1/org.scribe/scribe/1.3.7/583921bed46635d9f529ef5f14f7c9e83367bc6e/scribe-1.3.7.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="583921bed46635d9f529ef5f14f7c9e83367bc6e">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/scribe-1.3.7-dfebb18f14c08ec24c1ce41a1b158c3761b3ff97.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/exploded-aar/com.mixpanel.android/mixpanel-android/4.2.2/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="d3cb494bfac2e5fe2c64183aa3abe3c66cd58736">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/classes-c16c8101b7c0aab90de4abed052c95716063379e.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-ff90bb8117f3b7cc55df3dfc2872a00d4a3311e4.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="6975da39a7040257bd51d21a231b76c915872d38">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/javax.inject-1-45e725f6c7a750484864126fea623221e69e16a3.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/libs/internal_impl-23.1.0.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="8716243bf04bae8d6c9ca94d27b9a9be7236f0a3">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/internal_impl-23.1.0-9ca251c2d40ec15ec6843147c1286a5aec168f31.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/exploded-aar/nimple-android/nimplezxing/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="996619ef84068556ba05a58311ce802cecefc168">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/classes-6e8527c750714aba380f91e74b481a4aa3818c5b.jar" />
-    </item>
-    <item
-        jar="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="ddde541c289c8b816a8f8fd6c325d80788c522a6">
-        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/classes-3a7e7a6203812f31cdaf324ff200bb04d8b0539e.jar" />
+        sha1="3f151e49c316a5ab2c065969a3b3b55ef9b393fc">
+        <dex dex="/Users/bjohn/git/nimple-android/nimpleandroid/build/intermediates/pre-dexed/debug/classes-1b5024e71644233798208e94dd2ed81fe8743663.jar" />
     </item>
 
 </items>
