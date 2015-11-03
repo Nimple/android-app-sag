@@ -6,8 +6,8 @@
             android:icon="@drawable/ic_sag"
             android:key="prefs_about_version"
             android:selectable="false"
-            android:title="SAG Cards powered by Nimple" />
-        <Preference android:summary="SAG Cards ist eine für die Software AG gebrandete Version von Nimple - Networking Simple. SAG Cards ist ausschließlich für die Software AG und deren Mitarbeitenden lizensiert.\r\nSollten Sie kein Mitarbeitender der Software AG sein,laden Sie sich bitte die offizielle Version von Nimple über nimple.de herunter." />
+            android:title="SCards powered by Nimple" />
+        <Preference android:summary="SCards ist eine für die Software AG gebrandete Version von Nimple - Networking Simple. SCards ist ausschließlich für die Software AG und deren Mitarbeitenden lizensiert. Sollten Sie kein Mitarbeitender der Software AG sein, laden Sie sich bitte die offizielle Version von Nimple über nimple.de herunter." />
         <Preference android:title="@string/about_faq">
             <intent
                 android:action="android.intent.action.VIEW"
