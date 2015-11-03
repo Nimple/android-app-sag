@@ -3,9 +3,11 @@
 
     <style name="Theme.Nimple" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="actionBarStyle">@style/NimpleToolbarStyle</item>
-        <item name="colorPrimary">#0899cc</item>
-        <item name="colorPrimaryDark">#005d8c</item>
-        <item name="colorAccent">#ffa200</item>
+        <item name="colorPrimary">@color/nimpleColorPrimary</item>
+        <item name="colorPrimaryDark">@color/nimpleColorPrimaryDark</item>
+        <item name="colorAccent">@color/nimpleColorAccent</item>
+        <!-- Remove shadow below action bar Android < 5.0 -->
+        <item name="android:windowContentOverlay">@null</item>
     </style>
 
     <style name="Theme.Nimple.Main" parent="Theme.Nimple">
@@ -22,26 +24,26 @@
     </style>
 
     <style name="NimpleToolbarTextStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="android:textColorPrimary">#fff</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
     </style>
 
     <style name="NimpleTextDefault" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">14sp</item>
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textColor">@color/nimple_text_color</item>
+        <item name="android:textColor">@color/nimpleTextColor</item>
     </style>
 
     <style name="NimpleTextHeading" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">15sp</item>
         <item name="android:fontFamily">sans-serif-medium</item>
-        <item name="android:textColor">@color/nimple_text_color</item>
+        <item name="android:textColor">@color/nimpleTextColor</item>
         <item name="android:textStyle">bold</item>
     </style>
 
     <style name="NimpleTextAnnotation" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">15sp</item>
         <item name="android:fontFamily">sans-serif-light</item>
-        <item name="android:textColor">#a0a0a0</item>
+        <item name="android:textColor">@color/nimpleTextAnnotationColor</item>
     </style>
 
 </resources>

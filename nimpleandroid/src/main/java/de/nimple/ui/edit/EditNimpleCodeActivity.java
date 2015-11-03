@@ -94,6 +94,7 @@ public class EditNimpleCodeActivity extends AppCompatActivity {
     public CheckBox xingCheck;
     @InjectView(R.id.linkedinCheckbox)
     public CheckBox linkedinCheck;
+
     // social information
     @InjectView(R.id.facebookRoundIcon)
     ImageView facebookImageView;
@@ -129,10 +130,10 @@ public class EditNimpleCodeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edit_ncard_screen);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        setTitle(getString(R.string.edit_title));
         EventBus.getDefault().register(this);
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
         ButterKnife.inject(this);
-        setTitle("edit card");
     }
 
     @Override
