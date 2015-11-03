@@ -37,8 +37,6 @@ import de.nimple.util.VersionResolver;
 import de.nimple.util.fragment.MenuHelper;
 
 public class NimpleCodeFragment extends Fragment implements IExportExtender, IGraphic {
-
-
     public static final NimpleCodeFragment newInstance() {
         return new NimpleCodeFragment();
     }
@@ -52,10 +50,8 @@ public class NimpleCodeFragment extends Fragment implements IExportExtender, IGr
     RelativeLayout noNimpleCode;
     @InjectView(R.id.ncode_layout)
     RelativeLayout nimpleCode;
-
     @InjectView(R.id.arrow_up)
     ImageView arrowUp;
-
     @InjectView(R.id.ncard_name)
     TextView nCardName;
 

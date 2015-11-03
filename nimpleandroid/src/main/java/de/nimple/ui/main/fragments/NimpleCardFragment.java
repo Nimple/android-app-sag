@@ -57,7 +57,6 @@ public class NimpleCardFragment extends Fragment implements IExportExtender, IGr
     TextView addressStreetTextView;
     @InjectView(R.id.addressCityTextView)
     TextView addressCityTextView;
-
     @InjectView(R.id.facebookRoundIcon)
     ImageView facebookImageView;
     @InjectView(R.id.twitterRoundIcon)
@@ -66,10 +65,8 @@ public class NimpleCardFragment extends Fragment implements IExportExtender, IGr
     ImageView xingImageView;
     @InjectView(R.id.linkedinRoundIcon)
     ImageView linkedinImageView;
-
     @InjectView(R.id.ncard_name)
     TextView nCardName;
-
     @InjectView(R.id.card_dropdown)
     LinearLayout linearLayout;
 
