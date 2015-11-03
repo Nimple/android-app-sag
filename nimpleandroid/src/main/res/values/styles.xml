@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <style name="Theme.Nimple" parent="Theme.AppCompat.Light">
+    <style name="Theme.Nimple" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="actionBarStyle">@style/NimpleToolbarStyle</item>
         <item name="colorPrimary">#0899cc</item>
         <item name="colorPrimaryDark">#005d8c</item>
