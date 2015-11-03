@@ -379,14 +379,6 @@
                 android:textColor="@color/nimple_default_text_color" />
         </RelativeLayout>
 
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_alignParentTop="true"
-            android:alpha="0.1"
-            android:background="@drawable/drop_shadow" />
-
     </RelativeLayout>
-
 
 </ScrollView>
