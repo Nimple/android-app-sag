@@ -153,6 +153,7 @@
     <string name="personal_input_mobile">Numéro de portable</string>
     <string name="personal_input_card">Nom de la carte</string>
     <string name="form_error_card_invalid">Nom de la carte ne est pas valide.</string>
+    <string name="form_error_card_delete_last">Last card cant be deleted.</string>
 
     <!-- ProVersion -->
     <string name="ab_proVersion">Déverrouillez la version pro</string>

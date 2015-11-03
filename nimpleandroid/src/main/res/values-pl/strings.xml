@@ -153,6 +153,7 @@
     <string name="personal_input_mobile">Numer telefonu komórkowego</string>
     <string name="personal_input_card">Nazwa karty</string>
     <string name="form_error_card_invalid">Nazwa karty jest nieprawidłowy.</string>
+    <string name="form_error_card_delete_last">Last card cant be deleted.</string>
 
     <!-- ProVersion -->
     <string name="ab_proVersion">Odblokuj wersji Pro</string>

@@ -153,6 +153,7 @@
     <string name="personal_input_mobile">Numero di cellulare</string>
     <string name="personal_input_card">Nome del biglietto</string>
     <string name="form_error_card_invalid">Nome del biglietto non è valido.</string>
+    <string name="form_error_card_delete_last">Last card cant be deleted.</string>
 
     <!-- ProVersion -->
     <string name="ab_proVersion">Sblocca la versione pro</string>
