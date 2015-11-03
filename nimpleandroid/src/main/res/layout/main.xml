@@ -31,13 +31,5 @@
             android:layout_height="match_parent"
             android:layout_alignParentTop="true"
             android:background="#ededed" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_alignParentTop="true"
-            android:alpha="0.1"
-            android:background="@drawable/drop_shadow" />
-
     </RelativeLayout>
 </LinearLayout>
