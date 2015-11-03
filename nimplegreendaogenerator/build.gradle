@@ -5,7 +5,7 @@ mainClassName = "de.nimple.greendao.Generator"
 outputDir = "../nimpleandroid/src/main/java"
 
 dependencies {
-    compile('de.greenrobot:greendao-generator:1.3.1')
+    compile('de.greenrobot:greendao-generator:2.0.0')
 }
 
 run {

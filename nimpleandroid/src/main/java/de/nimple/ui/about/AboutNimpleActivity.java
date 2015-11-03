@@ -6,6 +6,9 @@ import android.view.MenuItem;
 
 import de.nimple.ui.about.fragments.AboutFragment;
 
+/**
+ * Created by bjohn on 03/11/15.
+ */
 public class AboutNimpleActivity extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
