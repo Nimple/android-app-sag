@@ -6,11 +6,6 @@
         android:title="@string/ab_share_card"
         app:showAsAction="always" />
     <item
-        android:id="@+id/menu_add"
-        android:icon="@drawable/ic_action_add_person"
-        android:title="@string/ab_add"
-        app:showAsAction="always" />
-    <item
         android:id="@+id/menu_save"
         android:title="@string/ab_export_card"
         app:showAsAction="never" />

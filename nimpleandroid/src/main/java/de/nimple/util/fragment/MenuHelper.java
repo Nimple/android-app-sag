@@ -24,17 +24,19 @@ import de.nimple.ui.main.MainActivity;
 public class MenuHelper {
 
     public static void selectMenuItem(MenuItem item, Fragment frag) {
-        if (item.getItemId() == R.id.menu_add) {
-            startScanner(frag.getActivity());
-        } else if (item.getItemId() == R.id.menu_about) {
+        if (item.getItemId() == R.id.menu_about) {
             startAboutNimpleActivity(frag.getActivity().getApplicationContext());
-        } else if (item.getItemId() == R.id.menu_share) {
+        }
+        if (item.getItemId() == R.id.menu_share) {
             shareApp(frag.getActivity(), null);
-        } else if (item.getItemId() == R.id.menu_feedback) {
+        }
+        if (item.getItemId() == R.id.menu_feedback) {
             sendFeedback(frag.getActivity());
-        } else if (item.getItemId() == R.id.menu_save) {
+        }
+        if (item.getItemId() == R.id.menu_save) {
             save(((IExportExtender) frag).getExport(), frag.getActivity().getApplicationContext());
-        } else if (item.getItemId() == R.id.menu_export) {
+        }
+        if (item.getItemId() == R.id.menu_export) {
             export(frag);
         }
     }

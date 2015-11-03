@@ -13,6 +13,7 @@ import de.nimple.events.NoOpEvent;
 public abstract class BaseActivity extends AppCompatActivity {
     @Inject
     EventBus eventBus;
+
     public Context ctx;
 
     @Override

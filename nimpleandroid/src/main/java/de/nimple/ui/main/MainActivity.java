@@ -2,9 +2,10 @@ package de.nimple.ui.main;
 
 import android.app.Fragment;
 import android.app.FragmentManager;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.TabLayout;
 import android.support.v13.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.widget.Toast;
@@ -13,6 +14,7 @@ import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
 import butterknife.InjectView;
+import butterknife.OnClick;
 import de.greenrobot.event.EventBus;
 import de.nimple.R;
 import de.nimple.dagger.BaseActivity;
@@ -24,17 +26,18 @@ import de.nimple.events.NimpleCodeScannedEvent;
 import de.nimple.ui.main.fragments.ContactListFragment;
 import de.nimple.ui.main.fragments.NimpleCardFragment;
 import de.nimple.ui.main.fragments.NimpleCodeFragment;
-import de.nimple.ui.parts.PagerSlidingTabStrip;
 import de.nimple.util.Lg;
+import de.nimple.util.fragment.MenuHelper;
 
 public class MainActivity extends BaseActivity {
-    private static Context ctx;
     private NimplePagerAdapter adapter;
 
     @InjectView(R.id.tabs)
-    PagerSlidingTabStrip tabs;
+    TabLayout tabs;
     @InjectView(R.id.pager)
     ViewPager pager;
+    @InjectView(R.id.fab_home)
+    FloatingActionButton fab;
 
     public static final int SCAN_REQUEST_CODE = 0x0000c0de;
 
@@ -43,25 +46,15 @@ public class MainActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
 
-        ctx = getApplicationContext();
-
         adapter = new NimplePagerAdapter(getFragmentManager());
 
         pager.setAdapter(adapter);
         pager.setOffscreenPageLimit(2);
 
-        tabs.setViewPager(pager);
+        tabs.setupWithViewPager(pager);
         pager.setCurrentItem(1);
 
-        //EventBus.getDefault().register(this);
         EventBus.getDefault().post(new ApplicationStartedEvent());
-    }
-
-    @Override
-    protected void onDestroy() {
-        //EventBus.getDefault().unregister(this);
-
-        super.onDestroy();
     }
 
     public void onEvent(ContactAddedEvent ev) {
@@ -78,6 +71,10 @@ public class MainActivity extends BaseActivity {
         Toast.makeText(ctx, String.format(getString(R.string.contact_scan_duplicated), ev.getContact().getName()), Toast.LENGTH_LONG).show();
     }
 
+    @OnClick(R.id.fab_home)
+    public void floatingActionButtonClicked() {
+        MenuHelper.startScanner(this);
+    }
 
     private class NimplePagerAdapter extends FragmentPagerAdapter {
         public NimplePagerAdapter(FragmentManager fm) {
