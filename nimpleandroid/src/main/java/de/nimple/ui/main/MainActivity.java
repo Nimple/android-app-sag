@@ -1,12 +1,16 @@
 package de.nimple.ui.main;
 
+import android.Manifest;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v13.app.FragmentPagerAdapter;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.widget.Toast;
 
@@ -39,6 +43,8 @@ public class MainActivity extends BaseActivity {
     @InjectView(R.id.fab_home)
     FloatingActionButton fab;
 
+    private static final int REQUEST_CAMERA = 0;
+
     public static final int SCAN_REQUEST_CODE = 0x0000c0de;
 
     @Override
@@ -55,6 +61,17 @@ public class MainActivity extends BaseActivity {
         pager.setCurrentItem(1);
 
         EventBus.getDefault().post(new ApplicationStartedEvent());
+
+        // Here, thisActivity is the current activity
+        if (ContextCompat.checkSelfPermission(this,
+                Manifest.permission.CAMERA)
+                != PackageManager.PERMISSION_GRANTED) {
+
+
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.CAMERA},
+                    REQUEST_CAMERA);
+        }
     }
 
     public void onEvent(ContactAddedEvent ev) {
